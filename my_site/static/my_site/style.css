@@ -219,7 +219,50 @@ li {
 }
 
 #project {
-	max-width: 50em;
+	max-width: 80%;
 	margin: 0 auto;
-	
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    gap: 100px;
+    color: white;
+}
+
+.description {
+    width: 350px;
+}
+
+#project-link {
+    color: rgb(60, 44, 119);
+    text-decoration: none;
+}
+
+#project-link:hover {
+    text-decoration: underline;
+}
+
+#app-photos {
+    height: 140px;
+    max-width: 151px;
+    margin-top: 5px;
+}
+
+.tech {
+    margin-bottom: 7px;
+    width: 200px;
+}
+
+.view {
+    margin-bottom: 7px;
+    width: 150px;
+}
+
+#description-2 {
+    margin: 2px 0px 2px 0px;
+}
+
+#description-3 {
+    margin: 15px 0px 15px 0px;
 }
