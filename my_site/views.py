@@ -5,3 +5,6 @@ from django.template import loader
 
 def index(request) :
     return render(request, 'my_site/home.html')
+
+def portfolio(request):
+    return render(request, 'my_site/portfolio.html')

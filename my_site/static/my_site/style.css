@@ -159,6 +159,11 @@ li {
     border-radius: 50%;
     border:none;
     outline: none;
+    padding: 15px;
+}
+
+#view-projects:hover {
+    background-color: rgb(219, 164, 175);
 }
 
 #tech-skills {
@@ -183,4 +188,12 @@ li {
 #arrow {
     transform: rotate(270deg);
     width: 50px;
+}
+
+#skill-words {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
