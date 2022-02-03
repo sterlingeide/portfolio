@@ -1,0 +1,31 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'my_site/style.css' %}">
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sterling Eide</title>
+    </head>
+    <body>
+        <div id="navbar">
+            <a id="tab" href="/">
+                <p>Home</p>
+            </a>
+            <a id="tab">
+                <p>Portfolio</p>
+            </a>
+            <a id="tab">
+                <p>About Me</p>
+            </a>
+            <a id="tab">
+                <p>Contact</p>
+            </a>
+        </div>
+        {% block content %}
+        {% endblock %}
+        <div id="foot">
+            <p id="foot-words">Check Out My Work:</p>
+        </div>
+    </body>
+</html>

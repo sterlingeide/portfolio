@@ -1,5 +1,45 @@
+{% extends 'my_site/header.html' %}
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'my_site/style.css' %}">
 {% block content %}
-<h1>This is Home</h1>
+    <div class="home-title">
+        <h1 id="home-title">Sterling Eide</h1>
+        <h2 id="home-sub">Junior Software Engineer</h2>
+    </div>
+    <div id="carousel-container">
+        <div>
+            <h4 id="carousel-words">
+                <span>I am a</span>
+                <div id="animation">
+                    <ul id="flip4">
+                        <li>Web Developer</li>
+                        <li>Rock Climber</li>
+                        <li>Problem Solver</li>
+                        <li>Game Enthusiast</li>
+                    </ul>
+                </div>
+            </h4>
+        </div>
+    </div>
+    <hr id="break1">
+    <div id="tech-container">
+        <img id="tech-skills" src="../../static/my_site/images/html.png">
+        <img id="tech-skills" src="../../static/my_site/images/css.png">
+        <img id="tech-skills" src="../../static/my_site/images/django.png">
+        <img id="tech-skills" src="../../static/my_site/images/java.png">
+        <img id="tech-skills" src="../../static/my_site/images/mongo.png.jpeg">
+        <img id="tech-skills" src="../../static/my_site/images/nodejs.png">
+        <img id="tech-skills" src="../../static/my_site/images/psql.png">
+        <img id="tech-skills" src="../../static/my_site/images/python.jpeg">
+        <img id="tech-skills" src="../../static/my_site/images/react.png">
+    </div>
+    <hr id="break2">
+    <div id="next">
+        <h3>View My Work</h3>
+        <a>
+            <button id="view-projects">
+                <img id="arrow" src="../../static/my_site/images/arrow.png">
+            </button>
+        </a>
+    </div>
 {% endblock %}
