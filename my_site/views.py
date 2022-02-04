@@ -8,3 +8,9 @@ def index(request) :
 
 def portfolio(request):
     return render(request, 'my_site/portfolio.html')
+
+def about(request):
+    return render(request, 'my_site/about.html')
+
+def contact(request):
+    return render(request, 'my_site/contact.html')
