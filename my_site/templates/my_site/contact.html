@@ -2,5 +2,25 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'my_site/style.css' %}">
 {% block content %}
-<h1>Hello</h1>
+    <div class="home-title">
+        <h1 id="contact-title">Contact Me</h1>
+    </div>
+    <form class="email-form" action="https://formspree.io/f/xoqrerbz" method="POST">
+        <label id="email-label">
+            <h2 id="email-label-text">Your Name</h2>
+        </label>
+        <input id="email-input" type="text" name="name" placeholder="Ex. John Smith">
+        
+        <label id="email-label">
+            <h2 id="email-label-text">Your email</h2>
+        </label>
+        <input id="email-input" type="email" name="email" placeholder="Ex. example@email.com">
+        
+        <label id="email-label">
+            <h2 id="email-label-text">Your message</h2>
+        </label>
+        <textarea id="email-input-area" name="message" rows = 8 placeholder="Write your message here"></textarea>
+        
+        <button id="email-submit" type="submit">Send</button>
+    </form>
 {% endblock %}
