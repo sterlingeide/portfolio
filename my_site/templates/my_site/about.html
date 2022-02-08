@@ -2,5 +2,18 @@
 {% load static %}
 <link rel="stylesheet" type="text/css" href="{% static 'my_site/style.css' %}">
 {% block content %}
-<h1>Hello</h1>
+    <div class="home-title">
+        <h1 id="contact-title">About Me</h1>
+    </div>
+    <div class="about-container">
+        <section id="about-picture">
+            <img id="pic" src="../../static/my_site/images/sterling.jpeg">
+        </section>
+        <section id="about-info">
+            <p id="about-text">Whether its reaching the summit of the South Sister, completing a voyage into the Alaskan wilderness, or creating an original full-stack application, I always love to push my limits and complete that which is most challenging. And my extensive experience working on teams and interacting with clients has fully prepared me for any environment that the tech industry can throw at me. I love using the problem solving skills, teamwork, and determination that I developed through my experiences in sports, work, and nature to help push my software development to the next level.</p>
+            <div id="resume">
+                <a id="resume-button" href="https://drive.google.com/file/d/1bT-enLZXvo9U6q4UmpTXT1Ui2P607s3v/view?usp=sharing" target="_blank">RESUME</a>
+            </div>
+        </section>
+    </div>
 {% endblock %}

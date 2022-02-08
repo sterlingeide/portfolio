@@ -321,9 +321,73 @@ li {
     padding: 10px 30px;
     background-color: rgb(247, 241, 158);
     color: rgb(60, 44, 119);
+    border: solid white;
 }
 
 #email-submit:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     cursor: pointer;
+}
+
+.about-container {
+    display: flex;
+    width: 90%;
+    margin: 50px auto 0;
+
+}
+
+#about-picture {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#pic {
+    width: 60%;
+    background-position: 50%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#about-info {
+    width: 50%;
+}
+
+#about-text {
+    color: white;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+#resume {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#resume-button {
+    align-items: center;
+    width: 45%;
+    background-color: rgb(247, 241, 158);
+    padding: 10px 0;
+    border: 1px solid;
+    border-radius: 40px;
+    color: rgb(202, 128, 140);
+    text-decoration: none;
+    font-weight: 700;
+    text-shadow: 2px 2px #fff;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    #pic {
+        transform: rotate(90deg);
+        width: 80%;
+    }
+    #about-picture {
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
 }
